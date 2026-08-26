@@ -1,0 +1,24 @@
+{
+  "$schema": "./schemas/catalog.schema.json",
+  "catalog_version": "1",
+  "items": [
+    {
+      "description": "Build an evidence-backed, human-governed proof pack for one agent workflow.",
+      "id": "agent-workforce-proof",
+      "kind": "skill",
+      "license": "MIT",
+      "path": "skills/agent-workforce-proof/SKILL.md",
+      "status": "stable",
+      "version": "0.1.0"
+    },
+    {
+      "description": "Scan AI skill files for prompt injection, exfiltration, destructive operations, persistence, and supply-chain risks.",
+      "id": "skills-guard",
+      "kind": "external-tool",
+      "license": "MIT",
+      "status": "stable",
+      "url": "https://github.com/aibuild-lab/skills-guard",
+      "version": "external"
+    }
+  ]
+}
