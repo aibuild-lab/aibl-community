@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/aibuild-lab/aibl-community/schemas/catalog.schema.json",
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "const": "./schemas/catalog.schema.json"
+    },
+    "catalog_version": {
+      "const": "1"
+    },
+    "items": {
+      "items": {
+        "additionalProperties": false,
+        "oneOf": [
+          {
+            "properties": {
+              "description": { "type": "string", "minLength": 20 },
+              "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+              "kind": { "const": "skill" },
+              "license": { "type": "string", "minLength": 2 },
+              "path": { "type": "string", "pattern": "^skills/[a-z0-9-]+/SKILL\\.md$" },
+              "status": { "enum": ["stable", "retired"] },
+              "version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" }
+            },
+            "required": ["description", "id", "kind", "license", "path", "status", "version"]
+          },
+          {
+            "properties": {
+              "description": { "type": "string", "minLength": 20 },
+              "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+              "kind": { "const": "external-tool" },
+              "license": { "type": "string", "minLength": 2 },
+              "status": { "enum": ["stable", "retired"] },
+              "url": { "type": "string", "pattern": "^https://github\\.com/aibuild-lab/[a-z0-9-]+$" },
+              "version": { "const": "external" }
+            },
+            "required": ["description", "id", "kind", "license", "status", "url", "version"]
+          }
+        ]
+      },
+      "minItems": 1,
+      "type": "array"
+    }
+  },
+  "required": ["$schema", "catalog_version", "items"],
+  "type": "object"
+}
