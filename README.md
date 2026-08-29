@@ -60,14 +60,18 @@ python3 tools/check_repo.py
 
 <table>
   <tr>
-    <td align="center"><img src="assets/team/tyler-fisk.jpg" width="150" alt="Tyler Fisk"><br><a href="https://www.linkedin.com/in/tyfisk"><strong>Tyler Fisk</strong></a><br>Co-Founder, Technical Lead, and Lead Instructor</td>
-    <td align="center"><img src="assets/team/sara-davison.jpg" width="150" alt="Sara Davison"><br><a href="https://www.linkedin.com/in/sara-davison-21b41131"><strong>Sara Davison</strong></a><br>Co-Founder, Curriculum, Strategy, and Community</td>
+    <td align="center"><img src="assets/team/tyler-fisk.jpg" width="150" alt="Tyler Fisk"><br><a href="https://www.linkedin.com/in/tyfisk"><strong>Tyler Fisk</strong></a><br>Co-Founder and Lead Instructor</td>
+    <td align="center"><img src="assets/team/sara-davison.jpg" width="150" alt="Sara Davison"><br><a href="https://www.linkedin.com/in/sara-davison-21b41131"><strong>Sara Davison</strong></a><br>Co-Founder and Strategy Lead</td>
   </tr>
 </table>
 
-- **Hunter Lee Canning** — Workshop facilitation and TA coordination
-- **Michael Schmidt** — Workshop facilitation and Summer Camp
-- **Wade Murley** — Team contributor and Windows platform testing
+- [**Hunter Lee Canning**](https://www.linkedin.com/in/hunter-canning) builds
+  agent-native platform systems and turns live operating work into
+  evidence-backed proofs.
+- [**J. Michael Schmidt**](https://www.linkedin.com/in/jmichael-schmidt)
+  contributes technical teaching, repository enablement, and data work.
+- [**Wade Murley**](https://www.linkedin.com/in/wademurley) supports LMS
+  production, learner operations, and program delivery.
 
 ## Roadmap
 
