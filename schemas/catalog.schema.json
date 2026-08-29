@@ -11,9 +11,9 @@
     },
     "items": {
       "items": {
-        "additionalProperties": false,
         "oneOf": [
           {
+            "additionalProperties": false,
             "properties": {
               "description": { "type": "string", "minLength": 20 },
               "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
@@ -26,6 +26,7 @@
             "required": ["description", "id", "kind", "license", "path", "status", "version"]
           },
           {
+            "additionalProperties": false,
             "properties": {
               "description": { "type": "string", "minLength": 20 },
               "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
@@ -38,6 +39,7 @@
             "required": ["description", "id", "kind", "license", "path", "status", "version"]
           },
           {
+            "additionalProperties": false,
             "properties": {
               "description": { "type": "string", "minLength": 20 },
               "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },

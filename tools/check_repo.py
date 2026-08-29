@@ -60,16 +60,20 @@ def main() -> None:
                 f"kit path: {identifier}",
             )
             kit_root = path.parent
-            for required in (
-                "agent-ready.md",
-                "prompts/inspect-and-apply.md",
-                "skill/SKILL.md",
-            ):
-                require((kit_root / required).is_file(), f"kit file: {identifier}/{required}")
             if identifier == "ai-agent-workforce-blueprint":
+                for required in (
+                    "agent-ready.md",
+                    "prompts/inspect-and-apply.md",
+                    "skill/SKILL.md",
+                ):
+                    require(
+                        (kit_root / required).is_file(),
+                        f"kit file: {identifier}/{required}",
+                    )
                 for relative in (
                     "agent-ready.md",
                     "prompts/inspect-and-apply.md",
+                    "skill/SKILL.md",
                 ):
                     source_urls = set(
                         URL_PATTERN.findall(

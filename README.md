@@ -15,8 +15,8 @@ from an AI idea to a useful, human-governed build. Learn with us in the
 is an agent-ready companion to AIBL's public blueprint. Give its bounded prompt
 to Codex, Claude Code, or another coding agent to inspect the public materials,
 draw a native Mermaid map, and help you identify one safe application to your
-own stack. It must ask before downloading, installing, executing, or changing
-anything.
+own stack. The prompt instructs the agent to ask before downloading, installing,
+executing, or changing anything.
 
 ### Prove an agent workflow
 

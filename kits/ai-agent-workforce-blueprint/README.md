@@ -11,8 +11,9 @@ Codex, Claude Code, or another agent tool.
 
 The default run only retrieves two public text sources, reviews them as
 untrusted content, and returns an explanation, a native Mermaid map, and
-follow-up questions. It does not download files, inspect your local machine,
-install dependencies, execute code, authenticate, or implement changes.
+follow-up questions. It does not authorize downloading files, inspecting your
+local machine, installing dependencies, executing code, authenticating, or
+implementing changes.
 
 ## Recommended use
 
