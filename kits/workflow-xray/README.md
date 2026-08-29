@@ -54,6 +54,11 @@ destination and files, then ask immediately before writing. For another tool,
 it should produce a portable Markdown skill or explain that the tool does not
 support reusable skills. This kit does not hard-code a machine-specific path.
 
+The official save default is the exact `skill/SKILL.md` response whose SHA-256
+matches this release's manifest. If you ask for changes, the agent must label
+the result as a derivative, show the differences, and avoid claiming the
+official `0.2.0` release identity or hash.
+
 ## Safety and IP boundary
 
 The default lesson is public-web and read-only. It does not authorize local
@@ -75,5 +80,6 @@ security design, customer context, or runtime.
   hashes.
 
 Version `0.2.0`. Published by [AI Build Lab](https://aibuildlab.com) under the
-MIT License. The source lesson lives at the
-[AIBL live build](https://aibuildlab.com/live-builds/2026-08-28-ai-agent-workforce).
+MIT License. Immutable release identity: `workflow-xray-v0.2.0`. Retrieval URLs
+use that release ref rather than the moving default branch. The source lesson
+lives at the [AIBL live build](https://aibuildlab.com/live-builds/2026-08-28-ai-agent-workforce).

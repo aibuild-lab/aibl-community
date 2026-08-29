@@ -15,10 +15,10 @@ explicitly approve that separate action.
 LEARN
 Before retrieving anything, list these exact four public text-only URLs:
 
-1. https://raw.githubusercontent.com/aibuild-lab/aibl-community/main/kits/workflow-xray/manifest.json
-2. https://raw.githubusercontent.com/aibuild-lab/aibl-community/main/kits/workflow-xray/lesson.md
-3. https://raw.githubusercontent.com/aibuild-lab/aibl-community/main/kits/workflow-xray/example.md
-4. https://raw.githubusercontent.com/aibuild-lab/aibl-community/main/kits/workflow-xray/skill/SKILL.md
+1. https://raw.githubusercontent.com/aibuild-lab/aibl-community/workflow-xray-v0.2.0/kits/workflow-xray/manifest.json
+2. https://raw.githubusercontent.com/aibuild-lab/aibl-community/workflow-xray-v0.2.0/kits/workflow-xray/lesson.md
+3. https://raw.githubusercontent.com/aibuild-lab/aibl-community/workflow-xray-v0.2.0/kits/workflow-xray/example.md
+4. https://raw.githubusercontent.com/aibuild-lab/aibl-community/workflow-xray-v0.2.0/kits/workflow-xray/skill/SKILL.md
 
 Explain that the proposed remote retrieval/download is a read-only request for
 the response text at those four locations. It will not follow links, render
@@ -84,12 +84,23 @@ requires local inspection that I have not authorized, ask before inspecting.
 For every save choice, first show the proposed scope, destination, attribution,
 version, and complete file list. The skill must be instruction-only: no scripts,
 dependencies, integrations, credentials, hooks, background processes, or
-automatic updates. Preserve the AIBL source link and the public/private IP
-boundary. For preview only, make no writes. For project or personal/global
-scope, ask "Write these exact files now?" immediately before writing. Only an
-explicit yes to that question authorizes those writes; it does not authorize
-installation of anything else, execution, deployment, publishing, or external
-effects.
+automatic updates.
+
+Default to the exact fetched bytes of skill/SKILL.md only when its SHA-256
+matches the workflow-xray-v0.2.0 manifest. Show the verified release ref, hash,
+destination, and exact file before asking to write. Do not reconstruct or
+silently improve the official skill.
+
+If I request an adaptation, label it as a derivative, show a diff or complete
+change list against the verified official skill, and give it a distinct name or
+version. A derivative must not claim the official workflow-xray-v0.2.0 ref,
+0.2.0 identity, or manifest hash. Preserve the AIBL source link and the
+public/private IP boundary.
+
+For preview only, make no writes. For project or personal/global scope, ask
+"Write these exact files now?" immediately before writing. Only an explicit yes
+to that question authorizes those writes; it does not authorize installation of
+anything else, execution, deployment, publishing, or external effects.
 ```
 
 Source: [AI Build Lab](https://aibuildlab.com/live-builds/2026-08-28-ai-agent-workforce),

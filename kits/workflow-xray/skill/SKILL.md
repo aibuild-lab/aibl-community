@@ -103,7 +103,20 @@ inspecting.
 Before any write, show the proposed scope, destination, attribution, version,
 and complete file list. The package must remain instruction-only: no scripts,
 dependencies, integrations, credentials, hooks, background processes, or
-automatic updates. Preserve this attribution:
+automatic updates.
+
+The official save default is the exact, hash-verified `skill/SKILL.md` response
+from release `workflow-xray-v0.2.0`. Use the SHA-256 in that release's manifest
+and preserve the bytes without rewriting, reformatting, or adding tool-specific
+instructions. Show the release ref, verified hash, destination, and exact file
+before asking to write. If the fetched skill bytes were not verified, do not
+present or save a synthesized file as official `0.2.0`.
+
+If the user requests an adaptation, label the result as a derivative. Show a
+diff or complete change list against the verified official bytes and use a
+distinct name or version. A derivative must not claim the official
+`workflow-xray-v0.2.0` ref, `0.2.0` identity, or manifest hash. Preserve this
+source attribution:
 
 > AIBL Workflow X-Ray, public method version 0.2.0. Source:
 > https://aibuildlab.com/live-builds/2026-08-28-ai-agent-workforce
