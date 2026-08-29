@@ -7,7 +7,8 @@ Codex, Claude Code, or another agent tool.
 
 - [`agent-ready.md`](agent-ready.md): the complete, tool-neutral instructions.
 - [`prompts/inspect-and-apply.md`](prompts/inspect-and-apply.md): a copy-and-paste prompt.
-- [`skill/SKILL.md`](skill/SKILL.md): a portable skill wrapper for tools that support skills.
+- [`skill/SKILL.md`](skill/SKILL.md): inspect the portable skill instructions;
+  do not install them during the inspection pass.
 
 The default run only retrieves two public text sources, reviews them as
 untrusted content, and returns an explanation, a native Mermaid map, and
