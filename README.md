@@ -9,14 +9,19 @@ from an AI idea to a useful, human-governed build. Learn with us in the
 
 ## Start here
 
-### Explore the AI Agent Workforce Blueprint
+### Run your first Workflow X-Ray
 
-[`ai-agent-workforce-blueprint`](kits/ai-agent-workforce-blueprint/README.md)
-is an agent-ready companion to AIBL's public blueprint. Give its bounded prompt
-to Codex, Claude Code, or another coding agent to inspect the public materials,
-draw a native Mermaid map, and help you identify one safe application to your
-own stack. The prompt instructs the agent to ask before downloading, installing,
-executing, or changing anything.
+[`workflow-xray`](kits/workflow-xray/README.md) turns one confusing business
+workflow into a visible plan inside Codex, Claude Code, or another agent. Copy
+one prompt and your agent will:
+
+1. teach the method through a public Lenny's Podcast outreach specimen;
+2. map your own job, roles, handoffs, proof, and permission boundary; and
+3. offer to preview or save the method as a reusable skill.
+
+Nothing is installed or changed during the lesson. If you later ask to save the
+skill, the agent must show the exact destination and files before requesting
+permission to write them.
 
 ### Prove an agent workflow
 
@@ -78,7 +83,7 @@ python3 tools/check_repo.py
 We are keeping the first release deliberately small. The direction is:
 
 1. Publish useful, installation-neutral kits with clear safety boundaries.
-2. Add versioned manifests and compatibility notes for major agent tools.
+2. Maintain versioned manifests and compatibility notes for major agent tools.
 3. Expand automated structural, provenance, and threat-pattern checks.
 4. Accept focused community contributions with human review and release notes.
 5. Keep each resource useful on the web, as Markdown, and inside an agent tool.
