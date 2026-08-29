@@ -3,6 +3,15 @@
   "catalog_version": "1",
   "items": [
     {
+      "description": "Inspect the public AI Agent Workforce Blueprint, map it natively, and identify one safe application without automatic effects.",
+      "id": "ai-agent-workforce-blueprint",
+      "kind": "kit",
+      "license": "MIT",
+      "path": "kits/ai-agent-workforce-blueprint/README.md",
+      "status": "stable",
+      "version": "0.1.0"
+    },
+    {
       "description": "Build an evidence-backed, human-governed proof pack for one agent workflow.",
       "id": "agent-workforce-proof",
       "kind": "skill",

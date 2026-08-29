@@ -17,6 +17,18 @@
             "properties": {
               "description": { "type": "string", "minLength": 20 },
               "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+              "kind": { "const": "kit" },
+              "license": { "type": "string", "minLength": 2 },
+              "path": { "type": "string", "pattern": "^kits/[a-z0-9-]+/README\\.md$" },
+              "status": { "enum": ["stable", "retired"] },
+              "version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" }
+            },
+            "required": ["description", "id", "kind", "license", "path", "status", "version"]
+          },
+          {
+            "properties": {
+              "description": { "type": "string", "minLength": 20 },
+              "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
               "kind": { "const": "skill" },
               "license": { "type": "string", "minLength": 2 },
               "path": { "type": "string", "pattern": "^skills/[a-z0-9-]+/SKILL\\.md$" },

@@ -3,7 +3,20 @@
 Open-source skills and safety tools from [AI Build Lab](https://aibuildlab.com).
 Everything here is designed to be inspectable before it is installed or run.
 
+This is our public freebie shelf: small, versioned kits that help people move
+from an AI idea to a useful, human-governed build. Learn with us in the
+[AI Agent Workforce program](https://maven.com/aibuildlab/scale-with-ai-agent-workforce).
+
 ## Start here
+
+### Explore the AI Agent Workforce Blueprint
+
+[`ai-agent-workforce-blueprint`](kits/ai-agent-workforce-blueprint/README.md)
+is an agent-ready companion to AIBL's public blueprint. Give its bounded prompt
+to Codex, Claude Code, or another coding agent to inspect the public materials,
+draw a native Mermaid map, and help you identify one safe application to your
+own stack. It must ask before downloading, installing, executing, or changing
+anything.
 
 ### Prove an agent workflow
 
@@ -43,6 +56,29 @@ validator before proposing a change:
 python3 tools/check_repo.py
 ```
 
+## The AIBL team
+
+<table>
+  <tr>
+    <td align="center"><img src="assets/team/tyler-fisk.jpg" width="150" alt="Tyler Fisk"><br><a href="https://www.linkedin.com/in/tyfisk"><strong>Tyler Fisk</strong></a><br>Co-Founder, Technical Lead, and Lead Instructor</td>
+    <td align="center"><img src="assets/team/sara-davison.jpg" width="150" alt="Sara Davison"><br><a href="https://www.linkedin.com/in/sara-davison-21b41131"><strong>Sara Davison</strong></a><br>Co-Founder, Curriculum, Strategy, and Community</td>
+  </tr>
+</table>
+
+- **Hunter Lee Canning** — Workshop facilitation and TA coordination
+- **Michael Schmidt** — Workshop facilitation and Summer Camp
+- **Wade Murley** — Team contributor and Windows platform testing
+
+## Roadmap
+
+We are keeping the first release deliberately small. The direction is:
+
+1. Publish useful, installation-neutral kits with clear safety boundaries.
+2. Add versioned manifests and compatibility notes for major agent tools.
+3. Expand automated structural, provenance, and threat-pattern checks.
+4. Accept focused community contributions with human review and release notes.
+5. Keep each resource useful on the web, as Markdown, and inside an agent tool.
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md). Security issues should follow
@@ -51,4 +87,5 @@ See [CONTRIBUTING.md](CONTRIBUTING.md). Security issues should follow
 ## License
 
 Unless a subdirectory says otherwise, this repository is MIT licensed. See
-[LICENSE](LICENSE).
+[LICENSE](LICENSE). Team photography is excluded; see
+[assets/team/README.md](assets/team/README.md).
