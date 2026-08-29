@@ -11,6 +11,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 ID_PATTERN = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 VERSION_PATTERN = re.compile(r"^[0-9]+\.[0-9]+\.[0-9]+$")
+URL_PATTERN = re.compile(r"https://[^\s)>]+")
+BLUEPRINT_SOURCE_URLS = {
+    "https://aibuildlab.com/resources/ai-agent-workforce-blueprint",
+    "https://aibuildlab.com/resources/ai-agent-workforce-blueprint/agent-ready.md",
+}
 FORBIDDEN_TEXT = (
     "/" + "Users" + "/",
     "file:" + "//",
@@ -39,7 +44,47 @@ def main() -> None:
         require(identifier not in identifiers, f"duplicate item: {identifier}")
         identifiers.add(identifier)
         require(item.get("status") in {"stable", "retired"}, f"status: {identifier}")
-        if item.get("kind") == "skill":
+        if item.get("kind") == "kit":
+            require(
+                set(item)
+                == {"description", "id", "kind", "license", "path", "status", "version"},
+                f"kit fields: {identifier}",
+            )
+            require(
+                bool(VERSION_PATTERN.fullmatch(item["version"])),
+                f"version: {identifier}",
+            )
+            path = ROOT / item["path"]
+            require(
+                path.is_file() and path.name == "README.md",
+                f"kit path: {identifier}",
+            )
+            kit_root = path.parent
+            if identifier == "ai-agent-workforce-blueprint":
+                for required in (
+                    "agent-ready.md",
+                    "prompts/inspect-and-apply.md",
+                    "skill/SKILL.md",
+                ):
+                    require(
+                        (kit_root / required).is_file(),
+                        f"kit file: {identifier}/{required}",
+                    )
+                for relative in (
+                    "agent-ready.md",
+                    "prompts/inspect-and-apply.md",
+                    "skill/SKILL.md",
+                ):
+                    source_urls = set(
+                        URL_PATTERN.findall(
+                            (kit_root / relative).read_text(encoding="utf-8")
+                        )
+                    )
+                    require(
+                        source_urls == BLUEPRINT_SOURCE_URLS,
+                        f"blueprint source URLs: {relative}",
+                    )
+        elif item.get("kind") == "skill":
             require(
                 set(item)
                 == {"description", "id", "kind", "license", "path", "status", "version"},
