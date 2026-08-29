@@ -1,0 +1,45 @@
+{
+  "schema_version": "1",
+  "id": "workflow-xray",
+  "name": "AIBL Workflow X-Ray",
+  "version": "0.2.0",
+  "license": "MIT",
+  "publisher": "AI Build Lab",
+  "source": {
+    "lesson": "https://aibuildlab.com/live-builds/2026-08-28-ai-agent-workforce",
+    "repository": "https://github.com/aibuild-lab/aibl-community/tree/main/kits/workflow-xray"
+  },
+  "compatibility": [
+    "codex",
+    "claude-code",
+    "portable-markdown"
+  ],
+  "hash_scope": "SHA-256 covers the listed UTF-8 files exactly as published. This manifest is excluded to avoid a circular hash.",
+  "declared_files": [
+    {
+      "path": "README.md",
+      "media_type": "text/markdown",
+      "sha256": "ec58a41b997b3f5f29941d4d0c041609cd762f7d68cf61ebc9d244f6adffaa0d"
+    },
+    {
+      "path": "lesson.md",
+      "media_type": "text/markdown",
+      "sha256": "90f956c94c9ee90a0ae23ebaaaa40fef0328181e3e2fb8edc76ffe68ea190aca"
+    },
+    {
+      "path": "example.md",
+      "media_type": "text/markdown",
+      "sha256": "9d8e5b95c57cd1193729123be1082c5305b27cf8b8ae0274f6a21e4183d9680b"
+    },
+    {
+      "path": "prompt.md",
+      "media_type": "text/markdown",
+      "sha256": "1024835e04fc5f2867d59185854e38361d9c799c264ea36fb1a19d568b997c62"
+    },
+    {
+      "path": "skill/SKILL.md",
+      "media_type": "text/markdown",
+      "sha256": "772b51820c0b4eab566c00558409832dd9cdafe9c1f4680e3083d76d67ef0623"
+    }
+  ]
+}
