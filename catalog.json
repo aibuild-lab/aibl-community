@@ -3,6 +3,15 @@
   "catalog_version": "1",
   "items": [
     {
+      "description": "Design one human-governed Agent Native Marketing Team from a completed podcast-outreach lesson and one concrete marketing job.",
+      "id": "marketing-team-skill",
+      "kind": "kit",
+      "license": "MIT",
+      "path": "kits/marketing-team-skill/README.md",
+      "status": "stable",
+      "version": "0.1.0"
+    },
+    {
       "description": "Turn one fuzzy business workflow into a visible agent-ready plan with explicit handoffs, proof, and human permission.",
       "id": "workflow-xray",
       "kind": "kit",

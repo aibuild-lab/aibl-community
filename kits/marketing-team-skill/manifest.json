@@ -1,0 +1,54 @@
+{
+  "schema_version": "1",
+  "id": "marketing-team-skill",
+  "name": "Free Marketing Team Skill",
+  "version": "0.1.0",
+  "license": "MIT",
+  "publisher": "AI Build Lab",
+  "source": {
+    "lesson": "https://aibuildlab.com/live-builds/2026-08-28-ai-agent-workforce",
+    "repository": "https://github.com/aibuild-lab/aibl-community/tree/marketing-team-skill-v0.1.0/kits/marketing-team-skill"
+  },
+  "release": {
+    "ref": "marketing-team-skill-v0.1.0",
+    "raw_base": "https://raw.githubusercontent.com/aibuild-lab/aibl-community/marketing-team-skill-v0.1.0/kits/marketing-team-skill/"
+  },
+  "compatibility": [
+    "codex",
+    "claude-code",
+    "portable-markdown"
+  ],
+  "hash_scope": "SHA-256 covers every listed UTF-8 file exactly as published. This manifest is excluded to avoid a circular hash.",
+  "declared_files": [
+    {
+      "path": "README.md",
+      "media_type": "text/markdown",
+      "mode": "0644",
+      "sha256": "72c5f540d36bbefbfb413b1aa0553e14291d45ce416c01b640d02120ca0a0058"
+    },
+    {
+      "path": "prompt.md",
+      "media_type": "text/markdown",
+      "mode": "0644",
+      "sha256": "e2f13fc89e1416eb65a9718a4553e3b1e841222e862ef07447c26be4580d91df"
+    },
+    {
+      "path": "teaching-transcript.md",
+      "media_type": "text/markdown",
+      "mode": "0644",
+      "sha256": "d2ee8559ca0a52f8142aa2d3f7fdfa85e2649371e63265e1d3f148d604fa5794"
+    },
+    {
+      "path": "example.md",
+      "media_type": "text/markdown",
+      "mode": "0644",
+      "sha256": "8bf60e93c1d2b4af7cfca272af2c81d22dfcdef5c68aa1589a365db0201c431d"
+    },
+    {
+      "path": "skill/SKILL.md",
+      "media_type": "text/markdown",
+      "mode": "0644",
+      "sha256": "dd6b4ed0f66341cb2a2ff0ad35632c05f5e0c57bc52ddf95c1c0af414247a084"
+    }
+  ]
+}
