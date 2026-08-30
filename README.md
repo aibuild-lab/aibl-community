@@ -9,6 +9,19 @@ from an AI idea to a useful, human-governed build. Learn with us in the
 
 ## Start here
 
+### Build your Agent Native Marketing Team
+
+[`marketing-team-skill`](kits/marketing-team-skill/README.md) is a guided,
+copy-and-paste lesson built from AIBL's podcast-outreach live build. It shows
+how one brief moved through research, strategy, production, quality review,
+and a human approval edge, then helps you map one marketing workflow of your
+own.
+
+The kit includes an edited teaching transcript, the completed public example,
+an instruction-only reusable skill, an immutable manifest, and a prompt that
+inspects the complete package before using or saving it. Nothing is installed,
+written, sent, or activated without a separate approval.
+
 ### Run your first Workflow X-Ray
 
 [`workflow-xray`](kits/workflow-xray/README.md) turns one confusing business
