@@ -1,0 +1,55 @@
+{
+  "schema_version": "aibl.repository-descriptor/v1",
+  "id": "repo.aibl-community",
+  "display_name": "AIBL Community",
+  "repository": "aibuild-lab/aibl-community",
+  "authority_scope": "This repository owns public, inspectable AI Build Lab kits, skills, safety guidance, catalog metadata, and repository-owned validation. It does not own private AIBL prompts, data, infrastructure, runtime, deployment, operational receipts, brand media authority, or downstream publication and installation states.",
+  "lifecycle": "current",
+  "audience": "public",
+  "privacy_class": "public",
+  "owner": "AIBL Engineering",
+  "human_entry_points": [
+    {
+      "label": "Community overview",
+      "path": "README.md"
+    },
+    {
+      "label": "Contributing guide",
+      "path": "CONTRIBUTING.md"
+    },
+    {
+      "label": "Security policy",
+      "path": "SECURITY.md"
+    }
+  ],
+  "agent_entry_points": [
+    {
+      "label": "Catalog validator",
+      "path": "tools/check_repo.py"
+    },
+    {
+      "label": "Catalog schema",
+      "path": "schemas/catalog.schema.json"
+    },
+    {
+      "label": "Machine-readable catalog",
+      "path": "catalog.json"
+    }
+  ],
+  "review": {
+    "reviewed_at": "2026-09-02",
+    "cadence_days": 90
+  },
+  "roadmap_refs": [],
+  "replacement_ref": null,
+  "notes": "Company Hub is the catalog and routing projection for this repository while Team HQ remains readable and accepts existing work. The repository provides public reusable source for the website's open resources, including small versioned kits and skills that can be inspected before use. Private knowledge, customer data, meeting records, credentials, internal runtime access, and heavy operational receipts stay outside Git. Brand media authority remains outside this repository, and publication or downstream installation requires separate authority.",
+  "extensions": {
+    "aibl.aibl-community": {
+      "authority_role": "public-kits-skills-safety-catalog-validation",
+      "privacy_boundary": "public-only-no-private-runtime-or-data",
+      "brand_media_authority": "the-studio-retained",
+      "hub_activation_state": "bootstrap-record-only",
+      "coexistence_route": "company-hub-catalog-teamhq-readable-fallback"
+    }
+  }
+}
