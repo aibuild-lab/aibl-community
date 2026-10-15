@@ -1,5 +1,5 @@
 {
-  "schema_version": "aibl.repository-descriptor/v1",
+  "schema_version": "aibl.repository-descriptor/v2",
   "id": "repo.aibl-community",
   "display_name": "AIBL Community",
   "repository": "aibuild-lab/aibl-community",
@@ -20,9 +20,7 @@
     {
       "label": "Security policy",
       "path": "SECURITY.md"
-    }
-  ],
-  "agent_entry_points": [
+    },
     {
       "label": "Catalog validator",
       "path": "tools/check_repo.py"
@@ -36,8 +34,23 @@
       "path": "catalog.json"
     }
   ],
+  "agent_entry_points": [
+    {
+      "id": "repository-guide",
+      "kind": "instructions",
+      "purpose": "Read Community overview before acting; linked commands retain their owning approval requirements",
+      "path": "README.md",
+      "status": "active",
+      "effect_class": "read_only",
+      "approval_class": "none",
+      "read_only": true,
+      "destructive": false,
+      "idempotent": true,
+      "open_world": false
+    }
+  ],
   "review": {
-    "reviewed_at": "2026-09-02",
+    "reviewed_at": "2026-10-15",
     "cadence_days": 90
   },
   "roadmap_refs": [],
@@ -51,5 +64,6 @@
       "hub_activation_state": "bootstrap-record-only",
       "coexistence_route": "company-hub-catalog-teamhq-readable-fallback"
     }
-  }
+  },
+  "accountable_owner_slug": "aibl-engineering"
 }
